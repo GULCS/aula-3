@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>C++ e Java</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #d3d3d3;
+            font-family: "Times New Roman", serif;
+            color: #333;
+        }
+
+        .pagina {
+            width: 635px;
+            margin: 4px auto;
+            background-color: #d3d3d3;
+            border: 2px solid #3333aa;
+        }
+
+        /* CABEÇALHO */
+        header {
+            height: 105px;
+            background-color: #ffe4bd;
+            border-bottom: 2px solid #3333aa;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        header img {
+            max-height: 85px;
+            max-width: 90px;
+        }
+
+        header h1 {
+            color: green;
+            font-size: 23px;
+            margin: 0;
+        }
+
+        /* MENU */
+        nav {
+            height: 23px;
+            background-color: #76c7e8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 55px;
+        }
+
+        nav a {
+            font-size: 8px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* CONTEÚDO */
+        main {
+            text-align: center;
+            padding: 5px;
+        }
+
+        h2 {
+            font-size: 15px;
+            margin: 5px 0 10px;
+        }
+
+        p {
+            font-size: 11px;
+            line-height: 1.15;
+            margin: 10px 0;
+        }
+
+        /* LIVROS */
+        .livros {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            margin-top: 15px;
+        }
+
+        .livros img {
+            width: 115px;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        /* VÍDEO E MAPA */
+        .midia {
+            display: flex;
+            justify-content: center;
+            gap: 42px;
+            margin-top: 15px;
+        }
+
+        .video {
+            width: 170px;
+            height: 170px;
+            background-color: black;
+        }
+
+        .mapa {
+            width: 170px;
+            height: 170px;
+        }
+
+        /* CONTATOS */
+        .contatos {
+            margin-top: 30px;
+        }
+
+        .contatos table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px dashed red;
+            font-size: 8px;
+        }
+
+        .contatos th,
+        .contatos td {
+            border: 1px solid #aaa;
+            padding: 5px;
+        }
+
+        .contatos th {
+            color: red;
+        }
+
+        /* LINKS */
+        .links {
+            width: 220px;
+            margin: 20px auto 8px;
+            background-color: yellow;
+            text-align: left;
+            padding: 5px 10px;
+            font-size: 8px;
+        }
+
+        .links a {
+            color: purple;
+        }
+
+        /* RODAPÉ */
+        footer {
+            height: 60px;
+            background-color: #ffe4bd;
+            border-top: 2px solid #aaa;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        footer img {
+            width: 45px;
+        }
+
+        footer .texto {
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="pagina">
+
+    <!-- CABEÇALHO -->
+    <header>
+        <img src="imagens/cpp.png" alt="C++">
+
+        <h1>C++ e Java</h1>
+
+        <img src="imagens/java.png" alt="Java">
+    </header>
+
+
+    <!-- MENU -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#livros">LIVROS</a>
+        <a href="#videos">VÍDEOS</a>
+        <a href="#contatos">CONTATOS</a>
+    </nav>
+
+
+    <!-- CONTEÚDO -->
+    <main id="home">
+
+        <h2>Introdução</h2>
+
+        <p>
+            C++ (em português lê-se "cê mais mais", em inglês lê-se
+            "see plus plus") é uma linguagem de programação compilada
+            multi-paradigma (seu suporte inclui linguagem imperativa,
+            orientada a objetos e genérica) e de uso geral.
+        </p>
+
+        <p>
+            Java é uma linguagem de programação orientada a objetos
+            desenvolvida na década de 90 por uma equipe de programadores
+            chefiada por James Gosling, na empresa Sun Microsystems.
+        </p>
+
+        <p>
+            Java foi desenvolvida por um grupo de pesquisadores da Sun
+            Microsystems por volta de 1990, pouco antes da explosão da
+            Internet. Essa linguagem possui estrutura muito semelhante
+            à da linguagem C.
+        </p>
+
+
+        <!-- LIVROS -->
+        <section id="livros">
+
+            <h2>Livros</h2>
+
+            <div class="livros">
+
+                <img src="imagens/livro-java.jpg"
+                     alt="Livro Projeto de Algoritmos">
+
+                <img src="imagens/livro-cpp.jpg"
+                     alt="Livro C++">
+
+                <img src="imagens/livro-java2.jpg"
+                     alt="Livro Java">
+            </div>
+
+        </section>
+
+
+        <!-- VÍDEOS -->
+        <section id="videos">
+
+            <h2 style="margin-top: 30px;">
+                Aprenda a programar com Java e C++ na FEI.
+            </h2>
+
+            <div class="midia">
+
+                <!-- Vídeo -->
+                <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/SEU_VIDEO"
+                    title="Vídeo FEI">
+                </iframe>
+
+                <!-- Mapa -->
+                <iframe
+                    class="mapa"
+                    src="https://www.google.com/maps/embed?pb=SEU_MAPA">
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATOS -->
+        <section id="contatos" class="contatos">
+
+            <h2>Contatos</h2>
+
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>e-mail</th>
+                </tr>
+
+                <tr>
+                    <td>Prof. Dr. Fagner Pinheiro</td>
+                    <td>fpinheiro@fei.edu.br</td>
+                </tr>
+
+                <tr>
+                    <td>Prof. Dr. Isac Jesus da Silva</td>
+                    <td>isacjesus@fei.edu.br</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <!-- LINKS -->
+        <div class="links">
+            <strong>Sites para consulta:</strong>
+
+            <ul>
+                <li>
+                    HTML -
+                    <a href="https://www.w3schools.com/html/">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    CSS -
+                    <a href="https://www.w3schools.com/css/">
+                        W3Schools
+                    </a>
+                </li>
+
+                <li>
+                    JavaScript -
+                    <a href="https://www.w3schools.com/js/">
+                        W3Schools
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <img src="imagens/html.png" alt="HTML5">
+
+        <div class="texto">
+            <p>
+                Desejamos um excelente semestre a todos.
+            </p>
+
+            <p>
+                (Fonte Usada: Comic Sans MS, tamanho 15pt)
+            </p>
+        </div>
+
+        <img src="imagens/css.png" alt="CSS3">
+
+    </footer>
+
+</div>
+
+</body>
+</html>
